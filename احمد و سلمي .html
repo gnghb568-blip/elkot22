@@ -3,83 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>لـ سلمى من قلبي 💜</title>
+    <title>مني ليوسف ويوسف لمني معروفة يعني 😂♥️</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap');
         *{margin:0;padding:0;box-sizing:border-box;}
-        body,html{height:100%;width:100%;overflow:hidden;background:linear-gradient(135deg,#e0bbff,#c9a8ff);font-family:'Cairo',sans-serif;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;}
-        #login{position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(20px);z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;}
-        input,button{font-size:28px;padding:20px;border-radius:50px;border:none;margin:15px;width:88%;max-width:400px;}
-        button{background:#c47aff;color:#fff;cursor:pointer;box-shadow:0 15px 35px rgba(196,122,255,0.6);}
-        h1{font-size:6em;margin:30px 0;}
-        .page{display:none;flex-direction:column;align-items:center;}
+        body,html{height:100%;width:100%;overflow:hidden;background:linear-gradient(135deg,#ff9a9e,#fad0c4);font-family:'Cairo',sans-serif;color:#fff;}
+        #login{position:fixed;inset:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(20px);z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+        input,button{font-size:28px;padding:20px;border-radius:50px;border:none;margin:15px;width:88%;}
+        button{background:#ff5e8e;color:#fff;cursor:pointer;box-shadow:0 15px 40px rgba(255,94,142,0.6);}
+        .page{display:none;flex-direction:column;align-items:center;justify-content:flex-start;height:100%;padding:20px;overflow-y:auto;}
         .page.active{display:flex;}
-        .box{background:#fff;padding:20px;border-radius:25px;box-shadow:0 30px 70px rgba(0,0,0,0.5);margin:20px;width:92vw;max-width:560px;}
-        .box img,.box video{width:100%;border-radius:20px;}
-        .text{background:#fff;color:#333;padding:35px;border-radius:25px;font-size:2.7em;line-height:1.9;text-align:center;font-weight:900;margin:20px;}
-        #nextBtn{background:#c47aff;color:#fff;padding:22px 100px;border-radius:50px;font-size:2.8em;cursor:pointer;box-shadow:0 20px 40px rgba(0,0,0,0.5);transition:0.4s;margin-top:30px;}
+        .top{font-size:2.8em;margin:20px 0 30px;font-weight:900;text-shadow:0 4px 15px rgba(0,0,0,0.5);}
+        .box{background:#fff;padding:18px;border-radius:28px;box-shadow:0 35px 80px rgba(0,0,0,0.5);width:92vw;max-width:560px;margin:15px 0;}
+        .box img,.box video{width:100%;border-radius:25px;}
+        .cap{font-size:2.5em;line-height:1.8;text-align:center;margin:30px 20px;}
+        #nextBtn{background:#ff5e8e;color:#fff;padding:22px 100px;border-radius:60px;font-size:3em;cursor:pointer;box-shadow:0 25px 50px rgba(255,94,142,0.6);transition:0.4s;margin:40px 0;}
         #nextBtn:hover{transform:scale(1.15);}
-        .final{font-size:2.8em;line-height:2.1;text-align:center;margin:40px 25px;opacity:0;transition:opacity 3s;}
+        .final{font-size:2.6em;line-height:2.1;text-align:center;margin:40px 20px;padding:35px;background:rgba(0,0,0,0.35);border-radius:35px;opacity:0;transition:opacity 3s;}
         .final.show{opacity:1;}
     </style>
 </head>
 <body>
 
-<!-- شاشة الباسوورد -->
 <div id="login">
-    <h2>ادخلي الباسوورد يا سلمى يا قمر 💜</h2>
-    <input type="password" id="p" placeholder="الباسوورد">
-    <button onclick="checkPass()">دخلي يا روحي</button>
+    <h2>ادخلي الباسوورد يا قمر 💕</h2>
+    <input type="password" id="p" placeholder="التاريخ بتاعنا">
+    <button onclick="check()">دخلي يا روحي</button>
 </div>
 
-<!-- الصفحات -->
 <div id="pages">
 
-    <!-- صفحة 1: رسالة الحب الأولى -->
-    <div class="page active" id="page1">
-        <h1>سلمى ♥</h1>
-        <div class="text">
-            يا أجمل حاجة حصلتلي في حياتي..<br>
-            كل يوم بحبك أكتر من إمبارح 💜
+    <!-- الصفحة الأولى -->
+    <div class="page active">
+        <div class="top">مني ليوسف ويوسف لمني معروفة يعني 😂♥️</div>
+        <div class="cap">
+            حبيبتي وروحي وكل حياتي صديقة عمري ورفيقة دربي ؛ حب عمري وحياتي وكل حاجه بتمناها في الدنيا<br>
+            بحبك ومش بمزاجي وحبك جوايا بيزيد كل يوم عمره م قل ولا نقص كل يوم حبك فقلبي بيزيد معنديش اغلي منك فالدنيا يا كل الدنيا♥️♥️<br>
+            تعالي نفتكر كام حاجه مع بعض ونرجع ذكرياتنا سوا♥️
         </div>
-        <button id="nextBtn" onclick="nextPage()">التالي ➜</button>
+        <button id="nextBtn" onclick="next()">التالي ➜</button>
     </div>
 
-    <!-- صفحة 2: الصورة -->
-    <div class="page" id="page2">
-        <h1>سلمى ♥</h1>
-        <div class="box">
-            <img src="https://i.ibb.co/TMFccPMV/Whats-App-Image-2025-11-29-at-11-46-52-PM.jpg">
-        </div>
-        <button id="nextBtn" onclick="nextPage()">التالي ➜</button>
+    <!-- الصور + الكلام بالترتيب اللي قلتي عليه بالحرف -->
+    <div class="page">
+        <div class="top">مني ليوسف ويوسف لمني معروفة يعني 😂♥️</div>
+        <div class="box"><img src="https://i.ibb.co/prfgKr8g/Whats-App-Image-2025-12-06-at-11-22-01-PM.jpg"></div>
+        <div class="cap">اول صورة تجمعنا صدفة♥️</div>
+        <button id="nextBtn" onclick="next()">التالي ➜</button>
     </div>
 
-    <!-- صفحة 3: الفيديو -->
-    <div class="page" id="page3">
-        <h1>سلمى ♥</h1>
+    <div class="page">
+        <div class="top">مني ليوسف ويوسف لمني معروفة يعني 😂♥️</div>
+        <div class="box"><img src="https://i.ibb.co/kgZbMQ3w/Whats-App-Image-2025-12-06-at-11-22-16-PM.jpg"></div>
+        <div class="cap">اول مرة قولتلك فيها بحبك♥️</div>
+        <button id="nextBtn" onclick="next()">التالي ➜</button>
+    </div>
+
+    <div class="page">
+        <div class="top">مني ليوسف ويوسف لمني معروفة يعني 😂♥️</div>
+        <div class="box"><img src="https://i.ibb.co/hJ40kx9j/Whats-App-Image-2025-12-06-at-11-22-32-PM.jpg"></div>
+        <div class="cap">اول عيد ميلاد ليكي مع بعض♥️</div>
+        <button id="nextBtn" onclick="next()">التالي ➜</button>
+    </div>
+
+    <div class="page">
+        <div class="top">مني ليوسف ويوسف لمني معروفة يعني 😂♥️</div>
+        <div class="box"><img src="https://i.ibb.co/m55h3RNb/Whats-App-Image-2025-12-06-at-11-23-06-PM.jpg"></div>
+        <div class="cap">يوم عمري م هنساه♥️</div>
+        <button id="nextBtn" onclick="next()">التالي ➜</button>
+    </div>
+
+    <div class="page">
+        <div class="top">مني ليوسف ويوسف لمني معروفة يعني 😂♥️</div>
+        <div class="box"><img src="https://i.ibb.co/VpDDwMdB/Whats-App-Image-2025-12-06-at-11-23-32-PM.jpg"></div>
+        <div class="cap">احلي حاجه حصلتلي في الدنيا</div>
+        <button id="nextBtn" onclick="next()">التالي ➜</button>
+    </div>
+
+    <div class="page">
+        <div class="top">مني ليوسف ويوسف لمني معروفة يعني 😂♥️</div>
+        <div class="box"><img src="https://i.ibb.co/Zzk7dVZX/Whats-App-Image-2025-12-06-at-11-23-48-PM.jpg"></div>
+        <div class="cap">عمري ف حياتي م هنسي اليوم اللي كنت مستنية بفارغ الصبر وهفضل متمسك باليوم دا لحد م تبقي بفستانك الابيض وبنتصور نفس الصور</div>
+        <button id="nextBtn" onclick="next()">التالي ➜</button>
+    </div>
+
+    <!-- الفيديو -->
+    <div class="page">
+        <div class="top">مني ليوسف ويوسف لمني معروفة يعني 😂♥️</div>
         <div class="box">
             <video controls autoplay loop>
-                <source src="https://files.catbox.moe/bf085n.mp4" type="video/mp4">
-                المتصفح مش بيدعم الفيديو.
+                <source src="https://files.catbox.moe/5hfnlk.mp4" type="video/mp4">
             </video>
         </div>
-        <button id="nextBtn" onclick="nextPage()">التالي ➜</button>
+        <button id="nextBtn" onclick="next()">التالي ➜</button>
     </div>
 
-    <!-- صفحة 4: الكلام النهائي -->
-    <div class="page" id="page4">
-        <h1>سلمى ♥</h1>
-        <div class="final" id="final">
-            سلمى..<br><br>
-            أنتِ مش بس حبيبتي..<br>
-            أنتِ بيتي، أماني، ضحكتي، دموعي، كل حاجة حلوة في الدنيا.<br><br>
-            مهما أكتب ومهما أقول..<br>
-            مش هعرف أوصف قد إيه أنا محظوظ إنك في حياتي.<br><br>
-            بحبك أكتر من الكلام..<br>
-            أكتر من الوقت..<br>
-            أكتر من نفسي 💜<br><br>
-            دايمًا معاكي.. وبس..<br><br>
-            من قلبي لقلبك..
+    <!-- الرسالة الأخيرة كاملة -->
+    <div class="page">
+        <div class="top">مني ليوسف ويوسف لمني معروفة يعني 😂♥️</div>
+        <div class="final">
+            رسالة مهمة اوي اوي قبل م تقفلي<br><br>
+            انا معنديش اغلي منك فالدنيا حقك عليا من اي حاجه قديمة او اي حاجه حصلت مبتمناش حاجه ف الدنيا قد م بتمني اننا نرجع مع بعض زي م كنا محلتيش غيرك انتي ومش عايز غيرك م الدنيا عايزك تعرفي اني مش بس بحبك انا مقدرش علي بعدك ولا اقدر اعيش منغيرك انتي ليا كل حاجه مش هسيبك لغيري ومش هسكت غير لما ربنا يقدرني ويتقفل علينا باب واحد بتمني اليوم اللي كان مجرد حلم اول م عرفنا بعض ودلوقتي الحلم قرب اوي اوي مش عايز غيرك م الدنيا ياللي مقدرش اعيش منغيرك ف الدنيا♥️♥️ بحبك اوي اوي ي منوشتي ومعنديش اغلي منك فالدنيا عايزك تعرفي اني محبتش حاجه ف الدنيا قد م حبيتك انتي ي نور عيني<br><br>
+            باااي👋🏻😘
         </div>
     </div>
 
@@ -90,26 +115,23 @@
 </audio>
 
 <script>
-const pass = "572009";
-let current = 1;
+const pass = "10102020";
+let cur = 0;
+const pages = document.querySelectorAll('.page');
 
-function checkPass(){
+function check(){
     if(document.getElementById('p').value === pass){
-        document.getElementById('login').style.display = 'none';
+        document.getElementById('login').style.display='none';
         document.getElementById('song').play();
-    } else {
-        alert("الباسوورد غلط يا قمر 💜");
-    }
+    } else alert("الباسوورد غلط يا قلبي ♥️");
 }
 
-function nextPage(){
-    document.getElementById('page'+current).classList.remove('active');
-    current++;
-    if(current <= 4){
-        document.getElementById('page'+current).classList.add('active');
-    }
-    if(current === 4){
-        setTimeout(() => document.getElementById('final').classList.add('show'), 800);
+function next(){
+    pages[cur].classList.remove('active');
+    cur++;
+    pages[cur].classList.add('active');
+    if(cur === pages.length - 1){
+        setTimeout(() => document.querySelector('.final').classList.add('show'), 800);
     }
 }
 </script>
